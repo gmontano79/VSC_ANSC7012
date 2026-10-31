@@ -1,4 +1,4 @@
-const CACHE = 'vsc-digital-v8-21-shell-1';
+const CACHE = 'vsc-digital-v8-22-shell-1';
 const ASSETS = ['./','./index.html','./manifest.webmanifest','./icons/icon-180.png','./icons/icon-192.png','./icons/icon-512.png'];
 self.addEventListener('install', event => { event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(ASSETS))); });
 self.addEventListener('activate', event => { event.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(k => k.startsWith('vsc-digital-') && k !== CACHE).map(k => caches.delete(k))))); });
@@ -7,3 +7,5 @@ self.addEventListener('fetch', event => {
   if(req.method !== 'GET' || new URL(req.url).origin !== self.location.origin) return;
   event.respondWith(caches.match(req).then(cached => cached || fetch(req)));
 });
+
+self.addEventListener('message',e=>{if(e.data==='SKIP_WAITING')self.skipWaiting();});
