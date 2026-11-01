@@ -1,9 +1,0 @@
-/* Stage 2: presentation-only improvements to signatures and saved inspection actions. */
-.signature-control canvas.sig {width:100%;height:150px;display:block;max-width:100%;touch-action:none;}
-.trainee-box .signature-control canvas.sig {height:170px;}
-#dashboard .v82-table-header,#dashboard .dash-entry {grid-template-columns:105px minmax(110px,1fr) minmax(150px,1.2fr) 92px minmax(290px,1.6fr)!important;min-width:850px!important;}
-#dashboard .v84-email-actions {display:grid!important;grid-template-columns:minmax(0,1fr);gap:7px!important;align-items:start!important;justify-content:stretch!important;min-width:0;}
-#dashboard .v84-email-status {display:block;line-height:1.35;}
-#dashboard .v82-actions {display:flex!important;gap:6px!important;flex-wrap:wrap!important;align-items:center!important;}
-#dashboard .v82-actions button {font-size:12px!important;padding:7px 9px!important;white-space:nowrap;}
-#dashboard .vsc-email-confirm {display:inline-flex!important;justify-content:center;align-items:center;width:max-content;max-width:100%;min-height:35px;white-space:nowrap!important;text-align:center;}
