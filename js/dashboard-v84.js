@@ -1,7 +1,7 @@
 
 (function(){
  const dash=document.getElementById('dashboard'); if(!dash)return;
- document.querySelectorAll('#v82-version').forEach(n=>n.textContent='VSC DIGITAL · VERSION 8.28');
+ document.querySelectorAll('#v82-version').forEach(n=>n.textContent='VSC DIGITAL · VERSION 8.29');
  const lower=document.getElementById('v82-lower');if(lower)lower.remove();
  const stats=dash.querySelector('.dash-stats');const head=dash.querySelector('.v82-panel-header');
  if(head&&stats&&head.nextElementSibling!==stats)head.after(stats);

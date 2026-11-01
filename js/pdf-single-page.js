@@ -23,4 +23,4 @@ v85EmailResult=async function(){
 el('send').onclick=v85EmailResult;
 emailSaved=function(r){openSaved(r);v85EmailResult()};
 // Application version label
-for(const n of document.querySelectorAll('#v82-version'))n.textContent='VSC DIGITAL · VERSION 8.28';
+for(const n of document.querySelectorAll('#v82-version'))n.textContent='VSC DIGITAL · VERSION 8.29';
