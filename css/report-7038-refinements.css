@@ -1,0 +1,17 @@
+
+#ar7038 .ar-home-head{display:flex;align-items:center;justify-content:space-between;gap:22px;background:linear-gradient(110deg,#092c4f,#165689);color:#fff;padding:28px 30px}
+#ar7038 .ar-home-head h2{font-size:29px;color:white;margin:0 0 7px}#ar7038 .ar-home-head p{color:#deefff;margin:0;font-size:13px}#ar7038 .ar-overline{font-size:10px!important;letter-spacing:.18em;font-weight:800;margin-bottom:10px!important;color:#91ddf4!important}
+#ar7038 .ar-home-head .btn{white-space:nowrap;background:#fff;color:#104777;box-shadow:0 5px 16px #001c3655}
+#ar7038 .ar-summary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px;margin:16px 0 22px}
+#ar7038 .ar-summary>div{background:#fff;border:1px solid #d9e5f0;border-radius:14px;padding:21px;box-shadow:0 5px 22px #17395c0b}
+#ar7038 .ar-summary span{display:block;color:#65798e;font-size:13px;font-weight:700}#ar7038 .ar-summary strong{display:block;font-size:31px;color:#104c81;margin-top:5px}
+#ar7038 .ar-home-list-title{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:15px}#ar7038 .ar-home-list-title h3{margin:0}#ar7038 .ar-home-list-title span{font-size:12px;color:#698098}
+#ar7038 .ar-report-card{border:1px solid #d7e5f0;border-radius:13px;padding:18px;margin-bottom:12px;display:grid;grid-template-columns:minmax(180px,1.3fr) minmax(120px,1fr) auto;align-items:center;gap:15px;background:#fafdff}
+#ar7038 .ar-report-card h4{font-size:16px;color:#123954;margin:0 0 7px}#ar7038 .ar-report-card p{font-size:12px;color:#586f85;margin:0}
+#ar7038 .ar-report-card .ar-pills{display:flex;gap:7px;flex-wrap:wrap;align-items:center}#ar7038 .ar-smallpill{padding:6px 9px;border-radius:16px;font-size:11px;font-weight:700;background:#e3f2fc;color:#145580}
+#ar7038 .ar-smallpill.pending{background:#fff2dd;color:#946119}#ar7038 .ar-smallpill.confirmed{background:#e0f8eb;color:#086940}
+#ar7038 .ar-row-buttons{display:flex;gap:7px;flex-wrap:wrap;justify-content:flex-end}#ar7038 .ar-row-buttons .btn{font-size:12px;padding:10px 12px}
+#ar7038 .ar-empty{padding:40px 15px;text-align:center;color:#607b91;border:1px dashed #b8cadc;border-radius:12px;background:#f5f9fd}
+#ar7038 #arEditor>.ar-panel:first-child{background:#eef7fc}
+@media(max-width:850px){#ar7038 .ar-report-card{grid-template-columns:1fr}#ar7038 .ar-row-buttons{justify-content:flex-start}}
+@media(max-width:600px){#ar7038 .ar-home-head{flex-direction:column;align-items:stretch;padding:20px}#ar7038 .ar-home-head .btn{width:100%}#ar7038 .ar-summary{gap:8px}#ar7038 .ar-summary>div{padding:12px}#ar7038 .ar-summary strong{font-size:24px}#ar7038 .ar-summary span{font-size:11px}}

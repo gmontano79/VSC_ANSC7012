@@ -1,0 +1,12 @@
+
+@page {size:letter;margin:0}
+@media print {
+ html,body{width:8.5in!important;margin:0!important;padding:0!important}
+ #report{display:block!important;width:612pt!important;margin:0!important;padding:0!important}
+ #report .official-page{width:612pt;height:792pt;position:relative;overflow:hidden;break-after:page;page-break-after:always}
+ #report .official-template{position:absolute;left:0;top:0;width:612pt;height:792pt;max-width:none;object-fit:fill}
+ #report .official-field{position:absolute;font-family:Arial,sans-serif;font-weight:normal;line-height:1.12;white-space:nowrap;overflow:hidden;color:#111}
+ #report .official-check{position:absolute;font:bold 12pt Arial,sans-serif;color:#111;line-height:1}
+ #report .official-sign{position:absolute;object-fit:contain;max-width:none;height:auto}
+ #report .official-remarks{position:absolute;left:36pt;top:468pt;width:278pt;height:82pt;overflow:hidden;font:8pt/1.25 Arial,sans-serif;color:#111;white-space:pre-wrap;overflow-wrap:anywhere}
+}

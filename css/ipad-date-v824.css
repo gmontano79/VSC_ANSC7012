@@ -1,0 +1,21 @@
+
+/* Reserve physical space around the iPad Safari date picker to prevent
+   its native control and focus decoration touching/overflowing the card. */
+@media screen and (min-width:701px) and (max-width:1100px){
+  main .grid > .field:has(> input#date){
+    min-width:0!important;
+    padding:0 12px 0 3px!important;
+    overflow:clip!important;
+  }
+  main .grid > .field > input#date{
+    display:block!important;
+    -webkit-appearance:none;
+    appearance:none;
+    box-sizing:border-box!important;
+    width:100%!important;
+    min-width:0!important;
+    max-width:100%!important;
+    margin:0!important;
+    outline-offset:-3px!important;
+  }
+}
