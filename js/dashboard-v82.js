@@ -7,7 +7,7 @@ if(hero){
   if(shield){let i=shield.cloneNode();i.id='v82HeroShield';hero.append(i)}
   const k=hero.querySelector('.v81-hero-kicker');if(k)k.textContent='USCG AUXILIARY';
 }
-const brand=document.querySelector('#v8-sidebar .brand');const bottomNav=document.querySelector('#v8-sidebar .nav-bottom');if(bottomNav){let v=document.createElement('div');v.id='v82-version';v.textContent='VSC DIGITAL · VERSION 8.29';bottomNav.append(v)}
+const brand=document.querySelector('#v8-sidebar .brand');const bottomNav=document.querySelector('#v8-sidebar .nav-bottom');if(bottomNav){let v=document.createElement('div');v.id='v82-version';v.textContent='VSC DIGITAL · VERSION 8.30';bottomNav.append(v)}
 const bottom=document.querySelector('#v8-sidebar .nav-bottom');const oldShield=bottom?.querySelector('img');if(oldShield)oldShield.remove();
 const banner=panel.querySelector('.v8-banner');const toolbar=panel.querySelector('.dash-toolbar');const stats=panel.querySelector('.dash-stats');const tools=panel.querySelector('.v8-tools');const h=panel.querySelector('h3');const list=panel.querySelector('#dashList');
 const head=document.createElement('div');head.className='v82-panel-header';

@@ -39,4 +39,4 @@ async function v853PrepareEmail(){
 }
 el('send').onclick=v853PrepareEmail;
 emailSaved=function(r){openSaved(r);v853PrepareEmail()};
-for(const n of document.querySelectorAll('#v82-version'))n.textContent='VSC DIGITAL · VERSION 8.29';
+for(const n of document.querySelectorAll('#v82-version'))n.textContent='VSC DIGITAL · VERSION 8.30';
