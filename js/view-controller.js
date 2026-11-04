@@ -4,14 +4,17 @@
  const content=dashboard?.querySelector(':scope > section.panel:not(#vscSettings):not(#vscReferenceGuide):not(#v8Profiles)');
  if(!dashboard||!settings||!guide||!content)return;
  const controlled=[content,settings,guide,profiles];
+ // ANSC 7038 is a sibling of #dashboard, not one of its child panels.
+ // Legacy 7038 listeners may not run when navigation is intercepted at capture phase.
+ function hideActivityReports(){const report=q('ar7038');if(report)report.style.display='none';}
  function closeMenu(){document.body.classList.remove('v8-open');document.querySelector('#v8-sidebar')?.classList.remove('open');}
  function active(nav){document.querySelectorAll('[data-nav]').forEach(b=>b.classList.toggle('active',b.dataset.nav===nav));}
- function showOnly(panel,nav){closeMenu();document.body.classList.remove('vsc-view-settings','vsc-view-reference');
+ function showOnly(panel,nav){hideActivityReports();closeMenu();document.body.classList.remove('vsc-view-settings','vsc-view-reference');
    document.body.classList.add('vsc-view-'+nav);dashboard.style.display='block';document.querySelector('main').style.display='none';
    controlled.forEach(p=>{if(p)p.style.display=p===panel?'block':'none'});document.querySelector('.footerbar')?.style.setProperty('display','none');active(nav);window.scrollTo(0,0);
    if(nav==='settings')window.VSCSettingsRefresh?.();
  }
- function other(nav){closeMenu();document.body.classList.remove('vsc-view-settings','vsc-view-reference');
+ function other(nav){hideActivityReports();closeMenu();document.body.classList.remove('vsc-view-settings','vsc-view-reference');
    settings.style.display='none';guide.style.display='none';content.style.display='';if(profiles)profiles.style.display='none';
    if(typeof navigateV8==='function')navigateV8(nav);active(nav);
  }
