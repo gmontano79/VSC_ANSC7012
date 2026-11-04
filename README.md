@@ -1,20 +1,68 @@
-# VSC Digital PWA — v8.21 (field-test build)
+# VSC Digital
 
-This package contains the existing v8.21 application with a PWA wrapper. The original inspection interface and PDF generators are unchanged.
+**Version 8.35 · Progressive Web App · Evaluation build**
 
-## GitHub Pages
+**Developed by Gustavo Montano**  
+**A GMTK Integrated Solutions Product**
 
-1. Create a **public** repository named `VSC_ANSC7012`.
-2. Upload **the contents of this folder** to the repository root (not the folder itself).
-3. Under **Settings → Pages**, choose **Deploy from a branch**, branch `main`, folder `/ (root)` and save.
-4. When published, open `https://YOUR-USERNAME.github.io/VSC_ANSC7012/` in Safari on iPad, then **Share → Add to Home Screen**. On Android use Chrome → **Install app** or **Add to Home screen**.
-5. Load it online at least once; then test Airplane Mode (offline) before field use.
+VSC Digital is a mobile-first Progressive Web App (PWA) designed to support Vessel Examiners during recreational boating Vessel Safety Checks. It provides a digital inspection workflow, an illustrated reference guide, and tools for maintaining inspection records and producing the relevant reports.
 
-## Important
+> **Project status:** VSC Digital is under evaluation. It is **not** presented as an officially adopted, endorsed, or authorized U.S. Coast Guard or U.S. Coast Guard Auxiliary application.
 
-- Pages is static and does not store owner or inspection data. Local storage is per browser/origin/device.
-- The VSC HTML currently stores inspection data in browser local storage, which is not guaranteed to survive site-data clearing or device loss. Export backups frequently. Different local HTML and GitHub Pages origins will not automatically share records.
-- Do **not** upload any completed inspections, photos of boat owners, signatures or exported backups to a public repository.
-- Sharing a PDF uses device/browser capabilities and may still need manually filling recipient/subject; verify on the actual iPad/Android.
-- This build is for testing; deployment, offline reliability, PDF and mail flows must be verified on devices.
-- For updating to a new build, change the CACHE constant in `service-worker.js` to force cache rotation and test updates carefully.
+## Features
+
+- **Digital Vessel Safety Check:** inspection workflow based on **ANSC 7012**, including examiner and vessel-owner signatures.
+- **Official-form PDF output:** produce a completed ANSC 7012 PDF for review and sharing.
+- **Saved Inspections:** view and manage locally saved inspection records, reopen records, and access PDF/email actions.
+- **Email workflow:** share an inspection report using supported browser/device capabilities and manually confirm when an email has been sent; opening a mail application is not proof of delivery.
+- **VSC Reference Guide:** illustrated, item-based inspection guidance using approved project reference images, including *When Required*, *What to Check*, and *Common Fail Points*.
+- **Daily Activity Reports:** ANSC 7038 reporting functionality.
+- **Settings and Diagnostics:** local backup/restore tools, application information, and diagnostic logs.
+- **Offline-capable PWA:** installable web experience designed for use on compatible tablets and smartphones, subject to device and browser limitations.
+
+## Open the application
+
+**GitHub Pages:** https://gmontano79.github.io/VSC_ANSC7012/
+
+For installation, open the published site in a supported browser and use the browser's **Add to Home Screen** or **Install** option where available. Load the app while connected before depending on offline access. Validate functionality on your intended device before operational use.
+
+## Privacy and data handling
+
+VSC Digital uses browser-based local storage for inspection data. In the current GitHub Pages deployment, the static hosting service is not a centralized inspection-record database.
+
+- Inspection records are **specific to the device, browser, and website origin**. They are not automatically synchronized between devices.
+- Clearing website data, reinstalling an installed web app, or losing a device **may cause local data loss**. Export and securely retain backups before device maintenance or significant changes.
+- Do **not** commit real inspection records, owner information, signatures, or backup files to this public repository.
+- PDF sharing and email completion depend on the device, browser, and mail application. Verify delivery separately.
+- Evaluate privacy, access controls, retention, and operational requirements before any organization-wide deployment.
+
+## Development and repository
+
+The application is deployed as a static PWA using GitHub Pages. The repository contains the web application, styles, scripts, icons, and reference assets needed for the published build.
+
+- **Release:** v8.35
+- **Deployment:** GitHub Pages
+- **Source control:** Git and GitHub
+- **Authentication:** SSH access may be configured independently by each contributor.
+- **Commit signing:** SSH signing has been configured for the maintainer's future commits; a GitHub **Verified** commit has not yet been confirmed. A README change can be used for that check.
+
+Changes should be validated on desktop, iPad, and Android without removing existing local records. Updates to the service worker or startup assets may require normal browser/PWA cache refresh behavior.
+
+## Intellectual property and credits
+
+**Created and developed by Gustavo Montano.**  
+**GMTK Integrated Solutions** is the product's associated business identity.
+
+**Copyright © 2026 Gustavo Montano. All rights reserved.**
+
+No open-source license is granted by this README. Public visibility of the repository does not itself grant permission to redistribute, sublicense, or commercially exploit original source code and assets beyond rights allowed by applicable law or GitHub's terms. Third-party materials and governmental forms, marks, and insignia remain subject to their respective rights and usage requirements.
+
+The authorship and ownership statement reflects the project's current intended presentation and does not override any applicable agreement, work-for-hire arrangement, or third-party rights.
+
+## Official status
+
+This project is an independent digital tool developed for evaluation and potential use in Vessel Safety Check workflows. Any organizational adoption, trademark or insignia use, data governance, distribution, or integration requires the appropriate review and authorization. References to ANSC 7012, ANSC 7038, the U.S. Coast Guard, or the U.S. Coast Guard Auxiliary describe the workflow and do not imply official endorsement.
+
+---
+
+**Developed by Gustavo Montano · GMTK Integrated Solutions · VSC Digital v8.35**
