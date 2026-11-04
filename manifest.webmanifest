@@ -1,12 +1,12 @@
 {
   "id": "./",
-  "name": "VSC Digital — Vessel Safety Check",
+  "name": "VSC Digital \u2014 Vessel Safety Check",
   "short_name": "VSC Digital",
   "description": "ANSC 7012 inspections and ANSC 7038 activity reports",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#edf3f9",
+  "background_color": "#061f3a",
   "theme_color": "#061f3a",
   "icons": [
     {

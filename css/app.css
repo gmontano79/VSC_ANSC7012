@@ -402,5 +402,58 @@ main{margin-top:22px!important}
 .vsc-about-copyright {font-size:12px;color:#516579}
 .vsc-about-disclaimer {font-size:12px;color:#5d7183;line-height:1.5;margin:14px 0 0}
 
-/* Approved original GMTK brand art: About panel only */
-.vsc-about-credit .vsc-gmtk-logo{display:block;width:min(100%,260px);height:auto;object-fit:contain;margin:12px 0 16px;}
+
+/* VSC DIGITAL v8.33 — view exclusivity and mobile Settings */
+body.vsc-view-settings #dashboard > section:not(#vscSettings),
+body.vsc-view-reference #dashboard > section:not(#vscReferenceGuide){display:none!important}
+body.vsc-view-settings #vscSettings,body.vsc-view-reference #vscReferenceGuide{display:block!important}
+body.vsc-view-settings main,body.vsc-view-reference main{display:none!important}
+#vscSettings.vsc-settings{box-sizing:border-box;width:calc(100% - 32px);max-width:1120px!important;margin:16px auto 60px!important;padding:0!important;overflow:hidden;background:transparent;border:0;box-shadow:none}
+#vscSettings *{box-sizing:border-box}
+#vscSettings .vsc-settings-hero{padding:26px 28px 29px;border-radius:19px;color:white;background:linear-gradient(115deg,#071d35,#0a3b65 67%,#1763a3);box-shadow:0 11px 27px #113a5b1c}
+#vscSettings .vsc-settings-eyebrow{font-size:10px;font-weight:800;letter-spacing:.2em;color:#8ee2ff;margin-bottom:9px}
+#vscSettings .vsc-settings-hero h2{margin:0!important;font-size:clamp(26px,3.3vw,34px);line-height:1.2;color:#fff!important}
+#vscSettings .vsc-settings-hero p{margin:9px 0 0;color:#d5e8f5;font-size:13px;line-height:1.55}
+#vscSettings .vsc-settings-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:18px;align-items:start}
+#vscSettings .vsc-settings-card{min-width:0;background:white;border:1px solid #d5e4f0;border-radius:17px;padding:22px;box-shadow:0 6px 24px #143e5d0d}
+#vscSettings .vsc-settings-diagnostics{grid-column:1/-1}
+#vscSettings .vsc-card-heading{display:flex;align-items:flex-start;gap:12px;margin-bottom:19px}
+#vscSettings .vsc-card-icon{display:grid;place-items:center;flex:none;width:42px;height:42px;border-radius:12px;background:#e6f3fd;color:#10588c;font-size:21px;font-weight:800}
+#vscSettings .vsc-card-heading h3{font-size:18px;line-height:1.25;color:#0c3155;margin:0 0 5px!important}
+#vscSettings .vsc-card-heading p{font-size:12px;color:#59738b;line-height:1.55;margin:0}
+#vscSettings .vsc-settings-actions{display:flex;flex-wrap:wrap;gap:9px}
+#vscSettings .vsc-settings-actions .btn{min-height:42px;border-radius:10px;font-size:12px;font-weight:750;white-space:nowrap}
+#vscSettings .vsc-about-identity{border-radius:13px;background:#eef6fc;padding:17px;color:#12344f}
+#vscSettings .vsc-about-wordmark{font-size:29px;font-weight:900;letter-spacing:.045em;color:#102b4e;line-height:1.05;margin-bottom:13px}
+#vscSettings .vsc-about-wordmark span{display:block;font-size:9px;letter-spacing:.19em;font-weight:700;color:#1769b3;margin-top:3px}
+#vscSettings .vsc-about-identity div:not(.vsc-about-wordmark){margin-bottom:9px}
+#vscSettings .vsc-about-version{color:#506d85;font-size:11px;font-weight:600}
+#vscSettings .vsc-about-identity p{font-size:12px;margin:7px 0}
+#vscSettings .vsc-about-identity small{font-size:11px;color:#5c7184}
+#vscSettings .vsc-about-disclaimer{font-size:11px;color:#60778a;line-height:1.5;margin:12px 0 0}
+#vscSettings .vsc-diag-meta{font-size:11px;color:#54708a;margin:0 0 15px}
+#vscSettings .vsc-log-scroller{max-height:350px;overflow:auto;border:1px solid #d9e5ef;border-radius:12px;margin-top:18px;background:#f8fbff;overscroll-behavior:contain}
+#vscSettings .vsc-log-grid{width:100%;border-collapse:collapse;min-width:550px;font-size:11px;line-height:1.5;font-variant-numeric:tabular-nums;text-align:left}
+#vscSettings .vsc-log-grid th{position:sticky;top:0;background:#e8f2fa;color:#214565;text-align:left;padding:11px 12px;font-size:11px;white-space:nowrap}
+#vscSettings .vsc-log-grid td{padding:9px 12px;border-top:1px solid #e1ebf3;color:#263d53;vertical-align:top}
+#vscSettings .vsc-log-grid td:nth-child(-n+3){white-space:nowrap}
+#vscSettings .vsc-log-grid .log-level{font-weight:750;color:#115f99}
+#vscSettings .vsc-log-grid .log-warn{color:#ad5d00}
+#vscSettings .vsc-log-grid .log-error{color:#bf2c36}
+#vscSettings .vsc-settings-return{margin-top:17px;text-align:right}
+/* Crisper sidebar credit, without covering the nautical photo */
+#v8-sidebar .vsc-developer-credit{padding:10px 5px!important;margin:7px 0 8px!important;border-radius:9px!important;background:#041d35e8!important;color:#fff!important;font-size:10px!important;line-height:1.5!important;text-shadow:0 1px 2px #00101d}
+#v8-sidebar .vsc-developer-credit span+span{color:#9ce6ff!important}
+#v8-sidebar #v82-version{padding:6px 3px;background:#041d35de;border-radius:7px;color:#eaf5ff!important;text-shadow:0 1px 3px #00101d}
+@media(max-width:800px){
+ #vscSettings.vsc-settings{width:calc(100% - 24px)!important;max-width:100%!important;margin:12px auto 100px!important;overflow:visible}
+ #vscSettings .vsc-settings-grid{grid-template-columns:1fr;gap:12px;margin-top:12px}
+ #vscSettings .vsc-settings-diagnostics{grid-column:1}
+ #vscSettings .vsc-settings-hero{padding:22px 18px;border-radius:15px}
+ #vscSettings .vsc-settings-card{padding:17px;border-radius:15px}
+ #vscSettings .vsc-settings-actions .btn{flex:1 1 125px}
+ #vscSettings .vsc-card-heading h3{font-size:17px}
+ #vscSettings .vsc-settings-return .btn{width:100%;min-height:44px}
+}
+
+#vscSettings .vsc-about-logo{display:block;max-width:260px;width:100%;height:auto;object-fit:contain;margin:0 0 16px;}
