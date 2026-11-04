@@ -1,0 +1,25 @@
+VSC Digital v8.32 — Release / protection notes
+
+IMPLEMENTED IN THIS UPDATE:
+- Consistent application version in UI/diagnostics using js/app-config.js.
+- Developer and product branding text in sidebar and Settings > About.
+- Author notice in HTML, JavaScript configuration and COPYRIGHT.txt.
+- Updated PWA cache name and precache for app-config.js.
+
+NOT IMPLEMENTED BY COPYING THESE FILES:
+- Git commit signing: configure SSH or GPG signing on the Mac; confirm the
+  GitHub commit says Verified. An author comment is NOT a digital signature.
+- Repository access restrictions: verify whether the GitHub repository is
+  public; deployed HTML/CSS/JS is visible to web visitors regardless.
+- Trademark permission or legal clearance for USCG/USCG Auxiliary marks.
+- Commercial rights or license agreement with any agency.
+- DRM, code obfuscation, server-side authorization, security audit.
+
+LOGO:
+No approved GMTK logo asset was present in the available project files.
+No logo has been regenerated or inserted. Add the ORIGINAL approved art
+later, without modifying it. Credit text is shown now.
+
+IMPORTANT:
+This is not a security audit and does not prevent copying of client-side code.
+Do not delete PWA storage or uninstall it: local inspections may be lost.

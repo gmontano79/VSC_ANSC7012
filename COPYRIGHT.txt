@@ -1,0 +1,13 @@
+VSC DIGITAL — AUTHORSHIP NOTICE
+
+Developed by Gustavo Montano
+A GMTK Integrated Solutions Product
+Copyright © 2026 Gustavo Montano. All rights reserved.
+
+No open-source license is granted by this notice. Review third-party libraries,
+official government forms, USCG/USCG Auxiliary marks, and any contractual or
+work-for-hire obligations independently; this notice does not determine or
+transfer ownership of those materials.
+
+For permission or licensing requests, contact the copyright holder through
+an authorized channel. No contact information is embedded in the application.

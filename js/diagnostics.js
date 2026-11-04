@@ -4,5 +4,5 @@ function log(level,code,detail){try{const row={time:new Date().toISOString(),lev
 window.VSCDiagnostics={log,read,clear(){try{localStorage.removeItem(KEY);return true}catch{return false}},key:KEY};
 window.addEventListener('error',e=>log('ERROR','JAVASCRIPT_ERROR','Uncaught exception (details redacted)'));
 window.addEventListener('unhandledrejection',e=>log('ERROR','UNHANDLED_REJECTION',e.reason?.name||'rejected'));
-log('INFO','APP_STARTED','v8.26; '+(navigator.onLine?'online':'offline'));
+log('INFO','APP_STARTED','v'+window.VSC_APP.version+'; '+(navigator.onLine?'online':'offline'));
 })();

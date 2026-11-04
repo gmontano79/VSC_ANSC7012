@@ -388,3 +388,19 @@ main{margin-top:22px!important}
 @media(max-width:600px){#ar7038 .ar-home-head{flex-direction:column;align-items:stretch;padding:20px}#ar7038 .ar-home-head .btn{width:100%}#ar7038 .ar-summary{gap:8px}#ar7038 .ar-summary>div{padding:12px}#ar7038 .ar-summary strong{font-size:24px}#ar7038 .ar-summary span{font-size:11px}}
 
 /* END css/report-7038-refinements.css */
+
+/* VSC Digital v8.32: author credit and About panel */
+#v8-sidebar .vsc-developer-credit {margin:6px 4px 8px;text-align:center;color:#b8cddd;font-size:10px;line-height:1.5;letter-spacing:.01em}
+#v8-sidebar .vsc-developer-credit span {display:block}
+#v8-sidebar .vsc-developer-credit span+span {color:#83c6e4}
+.vsc-about-credit {margin:18px 0 24px;padding:20px 22px;border-radius:12px;background:#eef5fb;border:1px solid #d8e5f0;color:#143650}
+.vsc-about-credit h3 {margin-top:0;color:#102b4e}
+.vsc-about-product {font-size:18px;font-weight:700;margin:8px 0}
+.vsc-about-version {font-size:12px;font-weight:500;white-space:nowrap;color:#49647c}
+.vsc-about-author,.vsc-about-brand,.vsc-about-copyright {margin:8px 0}
+.vsc-about-brand {font-weight:600;color:#1769b3}
+.vsc-about-copyright {font-size:12px;color:#516579}
+.vsc-about-disclaimer {font-size:12px;color:#5d7183;line-height:1.5;margin:14px 0 0}
+
+/* Approved original GMTK brand art: About panel only */
+.vsc-about-credit .vsc-gmtk-logo{display:block;width:min(100%,260px);height:auto;object-fit:contain;margin:12px 0 16px;}
