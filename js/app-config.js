@@ -10,7 +10,7 @@
   Object.defineProperty(window, 'VSC_APP', {
     value: Object.freeze({
       name: 'VSC Digital',
-      version: '8.33',
+      version: '8.35',
       developer: 'Gustavo Montano',
       brand: 'GMTK Integrated Solutions',
       copyright: '© 2026 Gustavo Montano. All rights reserved.'

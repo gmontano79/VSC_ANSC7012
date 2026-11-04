@@ -1,4 +1,4 @@
-/** VSC Digital - Settings actions and diagnostics (v8.33). */
+/** VSC Digital - Settings actions and diagnostics (v8.35). */
 (function(){'use strict';const q=id=>document.getElementById(id),dg=window.VSCDiagnostics;
  const fmtDate=new Intl.DateTimeFormat(undefined,{year:'numeric',month:'2-digit',day:'2-digit'});
  const fmtTime=new Intl.DateTimeFormat(undefined,{hour:'2-digit',minute:'2-digit',second:'2-digit',hour12:true});
